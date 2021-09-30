@@ -53,6 +53,7 @@ class EditProfileFragment : BaseFragment<EditProfileFragmentBinding, EditProfile
                         binding.formName.setClearText()
                         binding.formEmail.setClearText()
                         requireContext().hideKeyboard(requireView())
+                        editProfileViewModel.addUser.nullify()
                     }
                     Status.ERROR -> {
                         Loading.hideLoading()
@@ -75,6 +76,7 @@ class EditProfileFragment : BaseFragment<EditProfileFragmentBinding, EditProfile
                         Loading.hideLoading()
                         requireContext().showToast(requireContext().getString(R.string.success_update_user))
                         requireActivity().onBackPressed()
+                        editProfileViewModel.updateUser.nullify()
                     }
                     Status.ERROR -> {
                         Loading.hideLoading()
