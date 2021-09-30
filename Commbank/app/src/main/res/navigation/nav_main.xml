@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/editProfileFragment">
+
+    <fragment
+        android:id="@+id/browseProfileFragment"
+        android:name="com.test.commbank.ui.browseprofile.BrowseProfileFragment"
+        android:label="browse_profile_fragment"
+        tools:layout="@layout/browse_profile_fragment" />
+
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.test.commbank.ui.editprofile.EditProfileFragment"
+        android:label="edit_profile_fragment"
+        tools:layout="@layout/edit_profile_fragment" >
+        <action
+            android:id="@+id/action_editProfileFragment_to_browseProfileFragment"
+            app:destination="@id/browseProfileFragment" />
+
+        <argument
+            android:name="data"
+            android:defaultValue="@null"
+            app:argType="com.test.commbank.data.model.BrowseEmployee$Response$Data"
+            app:nullable="true"/>
+    </fragment>
+
+    <action
+        android:id="@+id/action_to_editFragment"
+        app:destination="@id/editProfileFragment" />
+</navigation>

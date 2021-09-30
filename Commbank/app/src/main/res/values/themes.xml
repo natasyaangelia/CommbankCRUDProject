@@ -1,0 +1,45 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Commbank" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="form_error">
+        <item name="android:textSize">@dimen/body3</item>
+        <item name="android:textColor">@color/color_red</item>
+    </style>
+
+    <style name="body3_grey">
+        <item name="android:textSize">@dimen/body3</item>
+        <item name="android:textColor">@color/color_slate_grey</item>
+    </style>
+
+    <style name="title_1_dark">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/h5</item>
+        <item name="android:textColor">@color/colorBlackGrey</item>
+    </style>
+
+    <style name="body_dark_grey">
+        <item name="android:textSize">@dimen/subtitle</item>
+        <item name="android:textColor">@color/colorBlackGrey</item>
+    </style>
+
+    <style name="BottomSheetPrimaryStyle" parent="@style/Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetPrimaryModal</item>
+    </style>
+
+    <style name="BottomSheetPrimaryModal" parent="@style/Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/shape_bottom_sheet</item>
+    </style>
+</resources>

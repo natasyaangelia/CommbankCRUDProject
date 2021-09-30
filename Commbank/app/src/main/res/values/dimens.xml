@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_zero">0dp</dimen>
+    <dimen name="dimen_xsmall">4dp</dimen>
+    <dimen name="dimen_small">8dp</dimen>
+    <dimen name="dimen_med">16dp</dimen>
+    <dimen name="dimen_large">32dp</dimen>
+    <dimen name="dimen_xlarge">64dp</dimen>
+
+    <dimen name="body1">14sp</dimen>
+    <dimen name="body2">13sp</dimen>
+    <dimen name="body3">12sp</dimen>
+    <dimen name="body4">11sp</dimen>
+    <dimen name="subtitle">15sp</dimen>
+    <dimen name="title">16sp</dimen>
+    <dimen name="large_title">18sp</dimen>
+    <dimen name="h4">30sp</dimen>
+    <dimen name="h5">24sp</dimen>
+    <dimen name="h6">20sp</dimen>
+    <dimen name="h1">36sp</dimen>
+    <dimen name="h0">40sp</dimen>
+</resources>

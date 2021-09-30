@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?attr/bottomSheetStyle"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/line"
+            android:layout_width="100dp"
+            android:layout_height="4dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorLightGreyBlue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            style="@style/title_1_dark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_med"
+            android:layout_marginTop="26dp"
+            android:text="@string/desc_user_gender"
+            app:layout_constraintBottom_toTopOf="@id/tv_male"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line"
+            android:layout_marginLeft="@dimen/dimen_med" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_male"
+            style="@style/body_dark_grey"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_xsmall"
+            android:layout_marginTop="@dimen/dimen_med"
+            android:background="@drawable/selector_item_greenteal"
+            android:elevation="1dp"
+            android:gravity="center"
+            android:padding="@dimen/dimen_med"
+            android:text="@string/male"
+            android:textColor="@color/selector_item_white"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            app:layout_constraintStart_toStartOf="@id/tvTitle"
+            app:layout_constraintWidth_percent="0.43"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_female"
+            style="@style/body_dark_grey"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_xsmall"
+            android:layout_marginTop="@dimen/dimen_med"
+            android:background="@drawable/selector_item_greenteal"
+            android:elevation="1dp"
+            android:gravity="center"
+            android:padding="@dimen/dimen_med"
+            android:text="@string/female"
+            android:textColor="@color/selector_item_white"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            app:layout_constraintEnd_toEndOf="@id/tvTitle"
+            app:layout_constraintWidth_percent="0.43"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:layout_marginVertical="@dimen/dimen_large"
+            android:background="@drawable/shape_button_primary"
+            android:layout_marginHorizontal="@dimen/dimen_med"
+            app:layout_constraintTop_toBottomOf="@id/tv_male"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

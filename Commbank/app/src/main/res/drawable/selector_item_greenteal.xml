@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/bg_rounded_ice_line"
+        android:text="@color/colorBlackGrey"
+        android:state_selected="false" />
+    <item
+        android:drawable="@drawable/bg_rounded_greenteal"
+        android:text="@color/white"
+        android:state_selected="true" />
+</selector>

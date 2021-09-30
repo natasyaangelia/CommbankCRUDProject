@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Commbank</string>
+    <string name="desc_user_id">Id</string>
+    <string name="desc_user_name">Name</string>
+    <string name="desc_user_email">Email</string>
+    <string name="desc_user_gender">Gender</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="submit">Submit</string>
+    <string name="prefix_browse_data">: %s</string>
+    <string name="input_your_email_address">Input your email address</string>
+    <string name="input_your_name">Input your name</string>
+    <string name="input_your_gender">Input your gender</string>
+    <string name="please_insert_a_valid_email_address">Please insert a valid email address</string>
+    <string name="please_insert_your_name">Please insert your name</string>
+    <string name="please_insert_your_gender">Please insert your gender</string>
+    <string name="show_all_users">Show All Users</string>
+    <string name="success_add_user">Success Add New User</string>
+    <string name="success_update_user">Success Update User</string>
+    <string name="success_delete_user">Success Delete User</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="user_list">User List</string>
+</resources>

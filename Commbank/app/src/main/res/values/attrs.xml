@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FormSingle">
+        <attr name="title" format="string" />
+        <attr name="error" format="boolean" />
+        <attr name="link" format="boolean" />
+        <attr name="disable" format="boolean" />
+        <attr name="secondHint" format="string" />
+        <attr name="secondHintVisibility" format="boolean" />
+        <attr name="titleCaps" format="boolean" />
+        <attr name="errorText" format="string" />
+        <attr name="hint" format="string" />
+        <attr name="maxLength" format="integer" />
+        <attr name="typeText">
+            <enum name="text" value="0" />
+            <enum name="email" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>

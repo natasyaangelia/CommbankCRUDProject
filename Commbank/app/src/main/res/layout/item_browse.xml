@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="user"
+            type="com.test.commbank.data.model.BrowseEmployee.Response.Data" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/view_background"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/bg_rounded_ice_line"
+            android:layout_marginHorizontal="@dimen/dimen_small"
+            android:layout_marginVertical="@dimen/dimen_xsmall"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/desc_user_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/desc_user_id"
+            android:layout_marginStart="@dimen/dimen_med"
+            android:layout_marginLeft="@dimen/dimen_med"
+            android:layout_marginTop="@dimen/dimen_small"
+            app:layout_constraintStart_toStartOf="@id/view_background"
+            app:layout_constraintTop_toTopOf="@id/view_background"
+            app:layout_constraintWidth_percent="0.15" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/desc_user_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/desc_user_name"
+            android:minLines="2"
+            android:layout_marginStart="@dimen/dimen_med"
+            android:layout_marginLeft="@dimen/dimen_med"
+            android:layout_marginTop="@dimen/dimen_xsmall"
+            app:layout_constraintStart_toStartOf="@id/view_background"
+            app:layout_constraintTop_toBottomOf="@id/desc_user_id"
+            app:layout_constraintWidth_percent="0.15"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/desc_user_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/desc_user_email"
+            android:minLines="2"
+            android:layout_marginStart="@dimen/dimen_med"
+            android:layout_marginLeft="@dimen/dimen_med"
+            android:layout_marginTop="@dimen/dimen_xsmall"
+            app:layout_constraintStart_toStartOf="@id/view_background"
+            app:layout_constraintTop_toBottomOf="@id/desc_user_name"
+            app:layout_constraintWidth_percent="0.15"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/desc_user_gender"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/desc_user_gender"
+            android:layout_marginHorizontal="@dimen/dimen_med"
+            android:layout_marginTop="@dimen/dimen_xsmall"
+            android:layout_marginBottom="@dimen/dimen_small"
+            app:layout_constraintStart_toStartOf="@id/view_background"
+            app:layout_constraintTop_toBottomOf="@id/desc_user_email"
+            app:layout_constraintBottom_toBottomOf="@id/view_background"
+            app:layout_constraintWidth_percent="0.15"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_user_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@{String.format(@string/prefix_browse_data, user.id)}"
+            android:layout_marginHorizontal="@dimen/dimen_xsmall"
+            app:layout_constraintStart_toEndOf="@id/desc_user_id"
+            app:layout_constraintTop_toTopOf="@id/desc_user_id"
+            app:layout_constraintBottom_toBottomOf="@id/desc_user_id"
+            app:layout_constraintEnd_toStartOf="@id/btn_delete"
+            android:layout_marginLeft="@dimen/dimen_xsmall" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_user_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@{String.format(@string/prefix_browse_data, user.name)}"
+            android:minLines="2"
+            android:layout_marginHorizontal="@dimen/dimen_xsmall"
+            app:layout_constraintStart_toEndOf="@id/desc_user_name"
+            app:layout_constraintTop_toTopOf="@id/desc_user_name"
+            app:layout_constraintBottom_toBottomOf="@id/desc_user_name"
+            app:layout_constraintEnd_toStartOf="@id/btn_delete"
+            android:layout_marginLeft="@dimen/dimen_xsmall" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_user_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@{String.format(@string/prefix_browse_data, user.email)}"
+            android:minLines="2"
+            android:layout_marginHorizontal="@dimen/dimen_xsmall"
+            app:layout_constraintStart_toEndOf="@id/desc_user_email"
+            app:layout_constraintTop_toTopOf="@id/desc_user_email"
+            app:layout_constraintBottom_toBottomOf="@id/desc_user_email"
+            app:layout_constraintEnd_toStartOf="@id/btn_delete"
+            android:layout_marginLeft="@dimen/dimen_xsmall" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_user_gender"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@{String.format(@string/prefix_browse_data, user.gender)}"
+            android:layout_marginHorizontal="@dimen/dimen_xsmall"
+            app:layout_constraintStart_toEndOf="@id/desc_user_gender"
+            app:layout_constraintTop_toTopOf="@id/desc_user_gender"
+            app:layout_constraintBottom_toBottomOf="@id/desc_user_gender"
+            app:layout_constraintEnd_toStartOf="@id/btn_delete"
+            android:layout_marginLeft="@dimen/dimen_xsmall" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_large"
+            android:layout_marginEnd="@dimen/dimen_med"
+            android:layout_marginRight="@dimen/dimen_med"
+            android:background="@drawable/shape_button_primary"
+            android:text="@string/delete"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@id/btn_edit"
+            app:layout_constraintEnd_toEndOf="@id/view_background"
+            app:layout_constraintTop_toTopOf="@id/view_background"
+            app:layout_constraintVertical_bias="0.394" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_large"
+            android:layout_marginEnd="@dimen/dimen_med"
+            android:layout_marginRight="@dimen/dimen_med"
+            android:background="@drawable/shape_button_primary"
+            android:text="@string/edit"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@id/view_background"
+            app:layout_constraintEnd_toEndOf="@id/view_background"
+            app:layout_constraintTop_toBottomOf="@id/btn_delete"
+            app:layout_constraintVertical_bias="0.394" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
